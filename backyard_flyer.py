@@ -124,9 +124,9 @@ class BackyardFlyer(Drone):
         3. Transition to the TAKEOFF state
         """
         print("takeoff transition")
-        target_altitude = 3.0
-        self.target_position[2] = target_altitude
-        self.takeoff(target_altitude)
+        altitude = 3.0
+        self.target_position[2] = altitude
+        self.takeoff(altitude)
         self.flight_state = States.TAKEOFF
 
     def waypoint_transition(self):
